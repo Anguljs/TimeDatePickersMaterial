@@ -1,0 +1,33 @@
+{
+  "name": "TimeDatePickersMaterial",
+  "version": "0.7.5",
+  "homepage": "https://github.com/Anguljs/TimeDatePickersMaterial",
+  "authors": [
+    "enma"
+  ],
+  "description": "date , time pickers material angular js",
+  "main": [
+    "dist/mdPickers.min.js",
+    "dist/mdPickers.min.css"
+  ],
+  "keywords": [
+    "angular",
+    "material",
+    "pickers",
+    "date",
+    "time"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-material": "~1.0.4",
+    "moment": "~2.11.1"
+  }
+}
