@@ -442,7 +442,7 @@ module.directive("mdpDatePicker", ["$mdpDatePicker", "$timeout", function($mdpDa
                     var date = angular.isDate(value) && moment(value);
                     if(date && date.isValid()) 
                         updateInputElement(date.format(scope.dateFormat));
-                        if(ngModel.$modelValue = "Invalid Date"){
+                        if(ngModel.$modelValue == "Invalid Date"){
                             var newval = null
                             ngModel.$modelValue = newval
                         } 
