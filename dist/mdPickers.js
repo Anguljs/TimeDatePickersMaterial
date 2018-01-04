@@ -446,8 +446,10 @@ module.directive("mdpDatePicker", ["$mdpDatePicker", "$timeout", function($mdpDa
                             var newval = null
                             ngModel.$modelValue = newval
                         } 
-                       /*  else 
-                         updateInputElement(null)  */
+                         if(ngModel.$modelValue == null || ngModel.$modelValue == '')
+                         {
+                             updateInputElement(null)
+                         }
                     });
                 
                 ngModel.$validators.format = function(modelValue, viewValue) {
